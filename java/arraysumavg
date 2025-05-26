@@ -1,0 +1,22 @@
+package Problems;
+import java.util.*;
+public class arraysumavg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter size:");
+		int size=sc.nextInt(),sum=0;
+		int a[]=new int[size];
+		for(int i=0;i<size;i++) {
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<size;i++) {
+			sum+=a[i];
+		}
+		double avg=(double)sum/size;
+		System.out.println("Sum: "+sum);
+		System.out.println("Average: "+avg);
+	}
+
+}
