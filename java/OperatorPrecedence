@@ -1,0 +1,31 @@
+package Problems;
+
+public class OperatorPrecedence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int result1 = 10 + 5 * 2;
+		int result2 = (10 + 5) * 2;
+		int result3 = 20 - 8 / 4;
+		int result4 = 2 + 3 * 4 - 5;
+		System.out.println("Result of 10 + 5 * 2 = " + result1);
+        System.out.println("Result of (10 + 5) * 2 = " + result2);
+        System.out.println("Result of 20 - 8 / 4 = " + result3);
+        System.out.println("Result of 2 + 3 * 4 - 5 = " + result4);
+	}
+
+}
+
+        
+        // Explanation: Multiplication (*) has higher precedence than addition (+)
+        // So, 5 * 2 = 10, then 10 + 10 = 20
+        // Expression 2 
+        // Parentheses () change the order: 10 + 5 = 15, then 15 * 2 = 3
+        // Expression 3   
+        // Division has higher precedence than subtraction
+        // So, 8 / 4 = 2, then 20 - 2 = 18
+        // Expression 4      
+        // Multiplication first: 3 * 4 = 12
+        // Then: 2 + 12 = 14, then 14 - 5 = 9
+        // Displaying results
+      
